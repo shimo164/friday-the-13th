@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13日の金曜日 - Friday the 13th</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌙 13日の金曜日 🌙</h1>
+            <nav>
+                <button id="homeBtn" class="nav-btn active">ホーム</button>
+                <button id="statsBtn" class="nav-btn">統計</button>
+            </nav>
+        </header>
+
+        <main>
+            <!-- ホームページ -->
+            <div id="homePage" class="page active">
+                <div class="next-friday-card">
+                    <h2>次の13日の金曜日</h2>
+                    <div id="nextFriday" class="next-date">
+                        計算中...
+                    </div>
+                    <div class="countdown">
+                        <div id="countdown"></div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3>13日の金曜日について</h3>
+                    <p>13日の金曜日は、多くの文化で不吉とされる日です。この現象は「パラスケヴィデカトリアフォビア」と呼ばれる恐怖症の対象でもあります。</p>
+                    <p>統計ページでは、2001年から2100年までの100年間における13日の金曜日の発生パターンを視覚的に確認できます。</p>
+                </div>
+            </div>
+
+            <!-- 統計ページ -->
+            <div id="statsPage" class="page">
+                <div class="stats-header">
+                    <h2>統計 (2001-2100)</h2>
+                    <p>13日の金曜日の発生パターン</p>
+                </div>
+                
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-color friday"></div>
+                        <span>13日の金曜日</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color normal"></div>
+                        <span>通常の13日</span>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="month-labels">
+                        <div class="year-label-space"></div>
+                        <div class="month-label">1月</div>
+                        <div class="month-label">2月</div>
+                        <div class="month-label">3月</div>
+                        <div class="month-label">4月</div>
+                        <div class="month-label">5月</div>
+                        <div class="month-label">6月</div>
+                        <div class="month-label">7月</div>
+                        <div class="month-label">8月</div>
+                        <div class="month-label">9月</div>
+                        <div class="month-label">10月</div>
+                        <div class="month-label">11月</div>
+                        <div class="month-label">12月</div>
+                    </div>
+                    <div id="chartGrid" class="chart-grid">
+                        <!-- グリッドはJavaScriptで生成 -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
